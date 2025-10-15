@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Surprise Letter</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff8f2;--ink:#2b2b2b;--accent:#c36b8a}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Georgia, 'Times New Roman', serif;background:#f2efe9;}
+.container{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px;}
+.card{width:100%;max-width:820px;background:var(--paper);padding:36px;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,0.08);position:relative;border:1px solid rgba(0,0,0,0.04);background-image:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));}
+
+/* floral corner (SVG as background) */
+.card::before{content:"";position:absolute;left:18px;top:18px;width:120px;height:120px;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"><g fill="%23c36b8a"><circle cx="18" cy="18" r="6"/><path d="M34 10c6 4 10 10 8 16-3 7-12 10-18 7-6-3-9-11-6-18 3-6 11-10 16-5z"/></g><g fill="%23ffdede" transform="translate(60,60)"><circle cx="10" cy="10" r="6"/><path d="M26 12c6 4 10 10 8 16-3 7-12 10-18 7-6-3-9-11-6-18 3-6 11-10 16-5z"/></g></svg>');background-repeat:no-repeat;background-size:contain;opacity:0.95}
+
+/* subtle paper texture using CSS gradient */
+.card{background-image:
+  radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
+  linear-gradient(180deg, #fff 0%, #fff8f6 100%);
+  background-size: 8px 8px, cover;
+}
+
+/* header */
+.letter-header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.logo{width:56px;height:56px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#ffd1dc,#ff9fb1);color:white;font-size:22px}
+.title{font-family:'Dancing Script', cursive;font-size:28px;margin:0;color:var(--ink)}
+
+/* content - handwriting font */
+.letter{margin-top:8px;font-family:'Dancing Script', cursive;font-size:20px;color:var(--ink);line-height:1.6;padding:8px 4px}
+.letter p{margin:12px 0;}
+
+/* cover */
+.cover{position:absolute;inset:0;background:rgba(255,255,255,0.95);display:flex;align-items:center;justify-content:center;flex-direction:column;border-radius:12px;padding:24px}
+.cover h2{font-family:'Dancing Script', cursive;font-size:32px;margin:0;color:var(--accent)}
+.open-btn{margin-top:14px;padding:10px 18px;border-radius:999px;border:0;background:var(--accent);color:white;font-weight:700;cursor:pointer;box-shadow:0 8px 20px rgba(195,107,138,0.18)}
+
+/* footer note */
+.note{margin-top:18px;font-size:13px;color:#6b6b6b}
+
+/* responsive */
+@media (max-width:600px){.card{padding:20px}.title{font-size:22px}.letter{font-size:18px}}
+</style>
+</head>
+<body>
+<main class="container">
+  <article class="card" role="article" aria-label="Surprise Letter">
+    <div class="letter-header">
+      <div class="logo">💌</div>
+      <div>
+        <h1 class="title">To: my favorite human, my love</h1>
+        <div class="note">A small letter from Raffa — open when you're ready</div>
+      </div>
+    </div>
+
+    <div class="letter" id="letter">
+      <p>💌 to: my favorite human, my love</p>
+<p>hi, sayang</p>
+<p>happy birthday, my love. another year, another blessing, another reason to love you deeper than before.</p>
+<p>ciee udah 18 tahun, tua kamu wkwkwk (becanda sayang).</p>
+<p>tau ngga? hari ini tuh bukan cuma spesial karena kamu lahir, tapi juga karena dunia dikasih satu alasan buat jadi lebih indah — kamu. ibarat senja yang selalu dinanti, kamu tuh versi paling hangat dari segalanya.</p>
+<p>aku bersyukur banget kamu lahir, karena kalo ngga, gimana aku bisa nemuin seseorang sebaik, sehangat, dan sekuat kamu? semesta bener-bener baik karena ngenalin aku ke kamu.</p>
+<p>dimataku, kamu selalu spesial, bahkan di hari biasa sekalipun — apalagi hari ini.</p>
+<p>hari ini aku cuma bisa nitip doa dari jauh. semoga di umur kamu yang baru ini: kamu makin dewasa, makin berani ngambil langkah, makin bisa berdamai sama diri sendiri, makin kuat, makin tenang, dan selalu sehat.</p>
+<p>semoga semua urusan kamu dilancarkan, dan yang paling penting: semoga kamu makin yakin kalau kamu pantas dicintai, dihargai, dan disayang tanpa tapi.</p>
+<p>remember this: you deserve all the love, all the kindness, and all the happiness this world can offer.</p>
+<p>ibadahnya jangan ditinggal ya, sayang. selalu inget Allah, karena dari-Nya datang semua kekuatan dan ketenangan itu.</p>
+<p>semoga mimpi-mimpi kamu datang satu-satu. yang belum kesampaian, semoga didekatkan. dan semoga kamu selalu dikelilingi orang-orang yang tulus, contohnya aku (iyain aja wkwk).</p>
+<p>penting nih: semoga kamu terus jadi pribadi yang adil, bijaksana, dan ngga lalai ngasih cinta kamu ke aku (kalau ngga, siap-siap aku tuntut di pengadilan rindu wkwkw).</p>
+<p>kuliah yang rajin ya, sayang. bukan cuma buat nilai, tapi buat masa depan kamu juga. aku percaya sama kamu, dan aku bakal selalu dukung kamu — lewat doa, semangat, dan chat randomku yang ngga jelas hahaha.</p>
+<p>kalo nanti kamu cape, jangan lupa istirahat, jangan terlalu keras sama diri sendiri. you’re doing great, and i’m proud of you.</p>
+<p>please take care of your heart, your mind, and your health — for me.</p>
+<p>let this year be your softest chapter yet. full of joy, growth, and peace.</p>
+<p>love you always, raffa (cowok kamu yang paling ganteng & paling cinta kamu)</p>
+    </div>
+
+    <div class="cover" id="cover" aria-hidden="false">
+      <h2>Surprise 🎉</h2>
+      <p style="margin-top:8px;color:#6b6b6b">Ada surat spesial untuk kamu. Tekan tombol untuk membuka.</p>
+      <button class="open-btn" id="openBtn">Buka Surat</button>
+    </div>
+  </article>
+</main>
+
+<script>
+(function(){
+  var cover = document.getElementById('cover');
+  var openBtn = document.getElementById('openBtn');
+  openBtn.addEventListener('click', function(){
+    cover.style.display = 'none';
+    cover.setAttribute('aria-hidden','true');
+  });
+  // allow keyboard open
+  openBtn.addEventListener('keydown', function(e){ if(e.key==='Enter' || e.key===' ') { e.preventDefault(); openBtn.click(); } });
+})();
+</script>
+</body>
+</html>
